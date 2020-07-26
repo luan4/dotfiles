@@ -21,7 +21,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-surround'
 
 " quick-scope
-Plug 'unblevable/quick-scope'
+"Plug 'unblevable/quick-scope'
 
 " goyo
 Plug 'junegunn/goyo.vim'
@@ -65,14 +65,14 @@ nnoremap <silent> <Leader>r :YcmCompleter GoToReferences<CR>
 
 " quick-scope
 " Trigger a highlight in the appropriate direction when pressing these keys:
-let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
+"let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
 
 " highlight colors
-augroup qs_colors
-  autocmd!
-  autocmd ColorScheme * highlight QuickScopePrimary guifg='#afff5f' gui=underline ctermfg=155 cterm=underline
-  autocmd ColorScheme * highlight QuickScopeSecondary guifg='#5fffff' gui=underline ctermfg=81 cterm=underline
-augroup END
+"augroup qs_colors
+"  autocmd!
+"  highlight link QuickScopePrimary Search
+"  highlight link QuickScopeSecondary IncSearch
+"augroup END
 
 " goyo callbacks
 function! s:goyo_enter()
